@@ -1,0 +1,30 @@
+<head>
+  <title>VKgreating</title>
+</head>
+
+<body>
+  <!-- {{> Canvas}} -->
+</body>
+<template name="Canvas">
+  <canvas id='c'></canvas>
+</template>
+
+<template name="hello">
+  <p>aefa {{{norm}}} {{new}} Даже не поздоровался{{ ! Or inline helper }}{{ > emoji ':speech_balloon:'}}</p>
+  <input id='getId' />
+  <button>Click Me</button>
+  <p>{{inner.first_name}}</p>
+  <p>{{inner.last_name}}</p>
+  <img src={{inner.photo_200}} />
+</template>
+
+<template name='randommes'>
+  <p id='textIn'></p>
+</template>
+
+<template name='painting'>
+</template>
+
+<template name='drawing'>
+  <canvas id='c'></canvas>
+</template>
