@@ -18,8 +18,7 @@ if (Meteor.isClient) {
         return JSON.parse(Session.get('response'))['response'][0];
       },
       norm: function(){
-        var emoji = Emojis.findOne({alias: 'smile'});
-        return emoji.toHTML();
+        return true;
       },
       new: function(){
         return Session.get('newMes')[0];
