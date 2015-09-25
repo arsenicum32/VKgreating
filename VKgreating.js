@@ -5,7 +5,11 @@ if (Meteor.isClient) {
     Session.setDefault('newMes',[]);
 
 
-
+    Template.randommes.helpers({
+      text: function(){
+        return Session.get('newMes');
+      }
+    });
     Template.hello.events({
         'click button' : function () {
             Meteor.getPicture();

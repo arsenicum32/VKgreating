@@ -1,4 +1,7 @@
 /* CSS declarations go here */
+body{
+  margin:0;
+}
 .emoji {
   font-size: inherit;
   height: 2.7ex;
